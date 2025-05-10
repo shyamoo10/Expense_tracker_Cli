@@ -199,10 +199,13 @@ def main():
  elif  args.command =="delete":
      
      delete_expense(args.id)
- else:
-     print("Arguments cannot become empty!") 
-     return       
      
+ elif args.command==None:
+     print("Arguments cannot become empty!") 
+     return
+ else:
+    print("command error , for the correct usage use help flag (--help or -h)")
+    return 
  
 
 
